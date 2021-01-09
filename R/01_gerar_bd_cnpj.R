@@ -50,7 +50,7 @@ gerar_bd_cnpj <- function(path_arquivos_txt,
 
         #!!! Criar uma função para verificar se os CNPJ na variável 'localizar_cnpj' são válidos
 
-        if(!n_lines %in% c(1000,10000, 100000, 1000000)) {
+        if(!n_lines %in% c(1000,10000, 100000, 1000000, 10000000, 100000000)) {
 
                 stop("Escolha a opção 10000, 100000 ou 1000000 para a quantidade de linhas a serem analisadas por vez!")
 
