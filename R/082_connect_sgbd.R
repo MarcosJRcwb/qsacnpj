@@ -72,7 +72,7 @@ connect_sgbd <- function(armazenar) {
 
 
                 connect_sgbd <- DBI::dbConnect(odbc::odbc(),
-                                               Driver   = "MySQL ODBC 5.3 ANSI Driver",
+                                               Driver   = "MySQL ODBC 8.0 Unicode Driver",
                                                Server   = rstudioapi::askForPassword("Server"), # "[your server's path]",
                                                database = rstudioapi::askForPassword("Database"),
                                                UID      = rstudioapi::askForPassword("Database user"),
